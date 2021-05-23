@@ -1,9 +1,9 @@
 import React from "react";
 
-const Icon = ({ iconName, component }) => {
+const Icon = ({ iconName, component, componentTrail = '' }) => {
   return (
     <svg
-      className={`${component}__icon`}
+      className={`${component}__icon${componentTrail}`}
       fill="black"
       width="16px"
       height="16px"
